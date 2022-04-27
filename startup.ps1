@@ -1,2 +1,2 @@
-$Env.mongodb_URI = 'mongodb://localhost:27017/cs103a_L36'
+$Env.mongodb_URI = 'mongodb+srv://jameskong:<password>@cs103a-cpa02.dq9w5.mongodb.net/KongData?retryWrites=true&w=majority'
 npm start
