@@ -89,7 +89,10 @@ router.post('/signup',
           const user = new User(
             {username:username,
              passphrase:encrypted,
-             age:age
+             age:age,
+             darkMode:false,
+             history:"No History Yet",
+             notebook:"Nothing in your notebook yet!"
             })
           
           await user.save()
