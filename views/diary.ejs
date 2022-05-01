@@ -1,0 +1,27 @@
+<div class="bg-light border border-primary p-3 rounded m-3">
+    <h1 class="display-4 text-center">My diaries</h1>
+    <p class="lead text-center">Welcome <%= user['username'] %>, you have <%= entries.length %> entries </p>
+</div>
+<hr>
+<ol>
+    <% for (diary of entries){%>
+        <li class="mb-2">          
+            <b><%= diary.title%>:</b>
+            <b>Rating: <%= diary.rating%>:</b>
+            <br>
+            <%= diary.createdAt %> 
+            <a href="/diary/delete/<%= diary._id%>">(delete)</a>
+            <i><%= diary.description %></i>
+            <i>Likes: <%= diary.likes %></i>
+            <i>Dislikes: <%= diary.dislikes %></i>
+        </li>
+    <% }%>
+</ol>
+<hr>
+<form method="post" action="/diary/addEntry">
+    Title:<input type="textarea" name="title" rows="4" cols="50"><br>
+    How would you rate your day? 1 being the worst, 5 being the best:<input type="number" name="quantity" min="1" max="5"><br>
+    Tell us about your day:<input type="text" name="description"><br>
+    
+    <input type="submit" value="Submit Entry"><br>
+</form>

@@ -7,8 +7,6 @@ var userSchema = Schema( {
   passphrase: String,
   age: String,
   darkMode: Boolean,
-  history: String,
-  notebook: String
 } );
 
 module.exports = mongoose.model( 'User', userSchema );

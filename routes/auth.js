@@ -91,8 +91,6 @@ router.post('/signup',
              passphrase:encrypted,
              age:age,
              darkMode:false,
-             history:"No History Yet",
-             notebook:"Nothing in your notebook yet!"
             })
           
           await user.save()
