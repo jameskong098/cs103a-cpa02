@@ -151,14 +151,14 @@ app.post('/diary/addEntry',
   isLoggedIn,
   async (req,res,next) => {
     try{
-      const {title,rating,description} = req.body; // get title and description from the body
+      const {title,rating,description} = req.body; // get title, rating, and description from the body
       const userId = res.locals.user._id; // get the user's id
       const createdAt = new Date(); // get the current date/time
       const likes = 0;
       const dislikes = 0;
-      let data = {title, rating, description, userId, createdAt, likes, dislikes} // create the data object
+      let data = {userId, title, rating, description, createdAt, likes, dislikes} // create the data object
       let entry = new Diary(data) // create the database object (and test the types are correct)
-      await entry.save() // save the todo item in the database
+      await entry.save() // save the entry in the database
       res.redirect('/diary')  // go back to the todo page
     } catch (e){
       next(e);
