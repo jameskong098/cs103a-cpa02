@@ -6,6 +6,8 @@ Creative Programming Assignment 02 - Web Apps
 
 Student: James Kong
 
+Video Demo: https://drive.google.com/file/d/1oYrDroTcjoUo33e31YQywNpgia88wc1V/view?usp=sharing
+
 This project is a diary entry drive application. Users can enter in diary entries and the website will hold their entries in the mongoDB database. They can also delete entries. The website is built off of the express.js framework and deployed using Heroku.
 
 ## Installation
