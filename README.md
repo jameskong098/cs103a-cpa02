@@ -33,11 +33,17 @@ npm install -g nodemon
 ```
 and start the project locally with
 ``` bash
-startup.sh (your startup script)
-
+startup.sh
+```
 If you want to deploy online, you will need to make an account on Heroku and link your mongoDB and push the project.
 
 Screenshots:
+  
+  
+  
+
+  
 
 
-```
+
+  
