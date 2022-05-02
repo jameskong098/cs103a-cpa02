@@ -129,7 +129,9 @@ app.get("/", (req, res, next) => {
   if (res.locals.loggedIn) {
     res.redirect('/diary')
   }
-  res.render("index");
+  else {
+    res.render("index");
+  }
 });
 
 app.get("/home", (req, res, next) => {
