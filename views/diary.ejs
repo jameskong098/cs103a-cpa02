@@ -1,4 +1,4 @@
-<div class="bg-light border border-primary p-3 rounded m-3 w-3">
+<div class="bg-light p-3 rounded m-3 w-3">
     <h1 class="display-4 text-center">My diaries</h1>
     <p class="lead text-center">Welcome <%= user['username'] %>, you have <%= entries.length %> entries </p>
 </div>
@@ -34,13 +34,10 @@
     <% for (diary of entries){%>
         <div class="mb-2">          
             <b class="m-2">Title:</b><%= diary.title%><br><br>
-            <%console.log(diary.rating)%>
             <b class="m-2">Rating (1-5):</b><%= diary.rating%><br> <br>
             <b class="m-2">My Entry:</b><br><br>
             <i class="m-2"><%= diary.description %></i><br> <br>
-            <b class="m-2">Likes:</b> <%= diary.likes %>
-            <b class="m-2">Dislikes:</b> <%= diary.dislikes %><br> <br>
-            <b class="m-2"><%= diary.createdAt %> </b>
+            <b class="m-2">Date created:</b><%= diary.createdAt %>
             <a href="/diary/delete/<%= diary._id%>">(Delete)</a>
         </div>
         <hr>

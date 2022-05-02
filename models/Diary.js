@@ -9,8 +9,6 @@ var DiaryEntrySchema = Schema( {
   rating: Number,
   description:String,
   createdAt: Date,
-  likes: Number,
-  dislikes: Number,
 } );
 
 module.exports = mongoose.model( 'Diary', DiaryEntrySchema );
