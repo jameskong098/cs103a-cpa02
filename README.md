@@ -35,15 +35,12 @@ and start the project locally with
 ``` bash
 startup.sh
 ```
-If you want to deploy online, you will need to make an account on Heroku and link your mongoDB and push the project.
+If you want to deploy online, you will need to make an account on Heroku and link your mongoDB and push the project. Heroku: https://dashboard.heroku.com/apps
 
 Screenshots:
   
-  
-  
+  ![image](https://user-images.githubusercontent.com/78178372/166342708-6b08e797-b398-4966-9d0b-54611104f1cf.png)
 
-  
+  ![image](https://user-images.githubusercontent.com/78178372/166342728-f5030e05-1f0e-4088-8c86-641d1920a75a.png)
 
-
-
-  
+  ![image](https://user-images.githubusercontent.com/78178372/166342814-94c26a63-1660-4077-99bd-d2063e8e66aa.png)
