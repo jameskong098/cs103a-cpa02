@@ -1,39 +1,23 @@
 
+<div style="text-align: center">
+    <text style="font-size:350%">Login to see your entries!</text>
+    <hr style="width: 45%; margin: 0 auto"><br><br>
+        <form class="bg-light" method="post" action="/login"><br>
+            <text style="font-size:150%">Username: </text>
+            <input type="text"
+                autocomplete="username"
+                name="username">
+                <br><br>
+            <text style="font-size:150%">Password: </text>
+            <input type="password"
+                autocomplete="passphrase"
+                name="passphrase"><br><br><br>
+            Don't have an account? Click here to <a href="/signupPage">signup</a><br><br>
+            <input type="submit">
+            <br><br>
+        </form>
+</div>
+    
 
-    <div class="row">
-      
-        <div class="col-sm-5">
-            <h2>Login</h2>
-            <form method="post" action="/login">
-                username: <input type="text"
-                                 autocomplete="username"
-                                 name="username"><br>
-                passphrase: <input  type="password"
-                                    autocomplete="passphrase"
-                                    name="passphrase"><br>
-                <input type="submit">
-            </form>
-        </div>
-      
-        <div class="col-sm-2" style="text-align:center">
-            OR
-        </div>
-      
-        <div class="col-sm-5">
-            <h2>Signup</h2>
-            <form method="post" action="/signup">
-                username: <input type="text" autocomplete="username" name="username"><br>
-                password
-                   <input type="password" autocomplete="passphrase" name="passphrase"><br>
-                confirm password:
-                    <input type="password" name="passphrase2"><br>
-              
-                age: <input type="number" name="age"><br>
-              
-              
-                <input type="submit">
-            </form>
-        </div>
-    </div>
 
 
